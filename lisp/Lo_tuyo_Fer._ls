@@ -1,0 +1,6 @@
+(defun c:tomartct()
+(setq ent (car (entsel))
+(setq vobject   (vlax-ename->vla-object ent)
+(setq vobjstring (vla-get-textstring vobject))
+(princ vobjstring)
+)
